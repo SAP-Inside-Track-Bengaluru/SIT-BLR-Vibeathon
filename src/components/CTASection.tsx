@@ -5,8 +5,14 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import microsoftLogo from "@/assets/microsoft-logo.png";
+import githubLogo from "@/assets/github-mark-white.png";
+import githubLightLogo from "@/assets/github-mark.png";
+import sapLogo from "@/assets/SAP.png";
+import { useTheme } from "next-themes";
 
 const CTASection = () => {
+  const { theme } = useTheme();
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -156,6 +162,30 @@ const CTASection = () => {
             Join hundreds of developers, innovators, and dreamers in the ultimate hackathon experience. 
             Your next breakthrough is just one weekend away.
           </motion.p>
+
+          <motion.div 
+            className="flex flex-col items-center gap-6 mb-16"
+            variants={containerVariants}
+          >
+            <motion.p 
+              className="text-lg md:text-xl text-gray-600 dark:text-gray-300 font-semibold"
+              variants={itemVariants}
+            >
+              Sponsors for the event are:
+            </motion.p>
+            <motion.div 
+              className="flex items-center justify-center gap-8"
+              variants={itemVariants}
+            >
+              <img src={microsoftLogo} alt="Microsoft" className="w-24 h-24 object-contain" />
+              <img 
+                src={theme === "dark" ? githubLogo : githubLightLogo} 
+                alt="GitHub" 
+                className="w-20 h-20 object-contain" 
+              />
+              <img src={sapLogo} alt="SAP Community" className="w-24 h-24 object-contain" />
+            </motion.div>
+          </motion.div>
 
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
