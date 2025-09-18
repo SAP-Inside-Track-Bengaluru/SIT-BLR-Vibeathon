@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/", // Root path for BTP deployment
+  base: "/SIT-BLR-Vibeathon", // Root path for BTP deployment
   server: {
     host: "::",
     port: 8080,
