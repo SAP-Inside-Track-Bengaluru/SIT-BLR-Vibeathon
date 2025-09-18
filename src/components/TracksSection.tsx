@@ -160,7 +160,7 @@ const TracksSection = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}
 					>
-						Embark on your journey of innovation across six cutting-edge domains.<br />
+						Unleash your potential by taking on challenges that transform ideas into meaningful solutions.<br />
 					</motion.p>
 				</motion.div>
 
