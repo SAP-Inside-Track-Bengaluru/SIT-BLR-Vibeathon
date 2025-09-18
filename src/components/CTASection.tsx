@@ -33,7 +33,7 @@ const CTASection = () => {
     },
     {
       icon: Zap,
-      text: "Cutting-edge technology tracks",
+      text: "Build solutions for real-world challenges.",
       gradient: "from-purple-500 to-pink-500"
     },
     {
@@ -68,7 +68,8 @@ const CTASection = () => {
   };
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden bg-white dark:bg-gray-900">
+    <section className="py-20 px-4 relative overflow-hidden">
+      <div className="absolute inset-0 gradient-hero opacity-30" />
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-0 -right-20 w-96 h-96 rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 blur-3xl"

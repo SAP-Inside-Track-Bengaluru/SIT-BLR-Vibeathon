@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 const tracks = [
 	{
 		id: 'ipx-hub',
-		title: 'Agenda to Calendar: The Smart Way',
+		title: 'Intelligent Participant Experience',
 		description: 'Create a personalized and seamless journey for every attendee.',
 		icon: Brain,
 		color: 'from-blue-500 to-purple-600',
@@ -17,7 +17,7 @@ const tracks = [
 	},
 	{
 		id: 'content-lifecycle',
-		title: 'The Smart Stage: Sessions, Schedules & Speakers',
+		title: 'Speaker and Content Lifecycle',
 		description: 'Streamline the entire content curation process using AI.',
 		icon: Cloud,
 		color: 'from-cyan-500 to-blue-500',
@@ -25,7 +25,7 @@ const tracks = [
 	},
 	{
 		id: 'event-operations',
-		title: 'Intelligent Event Management',
+		title: 'Autonomous Event Operations',
 		description: 'Build an intelligent command center for smooth event execution.',
 		icon: Cpu,
 		color: 'from-green-500 to-teal-500',

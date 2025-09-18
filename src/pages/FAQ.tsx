@@ -17,8 +17,8 @@ const FAQPage = () => {
 
   const faqItems = [
     {
-      question: "What is Vibathon?",
-      answer: "Vibathon is a 6-hour mini-hackathon as part of SAP Inside Track, where students team up to brainstorm, build using AI, and showcase innovative tech solutions aligned with SAP themes.",
+      question: "What is Vibeathon?",
+      answer: "Vibeathon is a 6-hour mini-hackathon as part of SAP Inside Track, where students team up to brainstorm, build using AI, and showcase innovative tech solutions aligned with SAP themes.",
       category: "general"
     },
     {
@@ -33,7 +33,7 @@ const FAQPage = () => {
     },
     {
       question: "How many members can be in a team?",
-      answer: "Teams can have 1–3 members.",
+      answer: "Teams can have 1–4 members.",
       category: "participation"
     },
     {
@@ -52,7 +52,7 @@ const FAQPage = () => {
       category: "participation"
     },
     {
-      question: "What do I get out of Vibathon?",
+      question: "What do I get out of Vibeathon?",
       answer: "• Hands-on hackathon experience\n• Mentorship from SAP professionals\n• Networking with peers & experts\n• Exciting prizes & certificates",
       category: "general"
     },
@@ -67,8 +67,8 @@ const FAQPage = () => {
       category: "judging"
     },
     {
-      question: "Can I continue working on my idea after Vibathon?",
-      answer: "Absolutely! Vibathon is just the kick-off. We encourage you to refine your idea and explore opportunities with mentors and SAP Community.",
+      question: "Can I continue working on my idea after Vibeathon?",
+      answer: "Absolutely! Vibeathon is just the kick-off. We encourage you to refine your idea and explore opportunities with mentors and SAP Community.",
       category: "general"
     },
     {
@@ -149,7 +149,7 @@ const FAQPage = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-xl text-gray-600 dark:text-gray-300"
             >
-              Everything you need to know about Vibathon. Can't find the answer you're looking for?{" "}
+              Everything you need to know about Vibeathon. Can't find the answer you're looking for?{" "}
             </motion.p>
 
             <motion.div

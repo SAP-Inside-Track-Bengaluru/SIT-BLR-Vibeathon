@@ -44,7 +44,7 @@ const schedule = [
 	{
 		time: '03:30 – 04:30',
 		title: 'Project Evaluation',
-		description: 'Judges circulate; each team delivers a 3-min live demo + 2-min Q&A.',
+		description: 'Judges circulate; shortlisted teams delivers a 3-min live demo + 2-min Q&A.',
 		icon: Users,
 	},
 	{

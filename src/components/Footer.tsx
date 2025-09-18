@@ -134,6 +134,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* Creative Footer Line */}
+        <motion.p 
+          className="text-center text-sm text-gray-500 mt-4"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+Made by humans, with smart help from Lovable and GitHub Copilot.        </motion.p>
       </div>
     </footer>
   );

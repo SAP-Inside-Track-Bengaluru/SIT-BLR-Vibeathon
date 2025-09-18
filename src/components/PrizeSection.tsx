@@ -27,7 +27,7 @@ const prizes = [
 		icon: Award,
 		color: 'from-amber-600 to-amber-800',
 		glow: 'shadow-[0_0_30px_rgba(205,127,50,0.5)]',
-		description: 'Third Place'
+		description: 'Second Runner Up'
 	},
 	{
 		position: 'Best Innovation',
@@ -100,12 +100,11 @@ const PrizeSection = () => {
 								<Sparkles className="w-8 h-8" />
 							</motion.div>
 
-							<div className="relative">
-								<div className="absolute -inset-x-1 -inset-y-4 bg-gradient-to-r from-blue-500/10 to-blue-400/10 blur-xl rounded-lg" />
-								<h2 className="text-4xl md:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 relative">
+							<h2 className="text-4xl md:text-6xl font-bold tracking-tight relative">
+								<span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 filter drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]">
 									Amazing Prize Pool
-								</h2>
-							</div>
+								</span>
+							</h2>
 
 							<motion.div
 								className="absolute -top-8 -right-8 text-blue-400/80"
@@ -123,6 +122,16 @@ const PrizeSection = () => {
 							</motion.div>
 						</div>
 					</motion.div>
+
+					<motion.p
+						className="text-2xl font-semibold text-muted-foreground -mt-16 mb-4"
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ delay: 0.2 }}
+					>
+						worth
+					</motion.p>
 
 					<motion.div
 						className="relative mb-12"
