@@ -28,18 +28,19 @@ const Introduction = () => {
 
   const judgingCriteriaHeading = "Projects will be scored on the following:";
   const judgingCriteria = [
-    "Innovation & Creativity – Originality of the idea.",
-    "Technical Implementation – Functionality, code quality, and working demo.",
-    "Business Impact – Relevance to SAP theme and real-world applications.",
-    "Sustainability & Social Impact – Contribution toward positive change.",
-    "Presentation & Demo – Clarity, teamwork, and ability to explain the solution.",
-    "Mentors will circulate during both sprints.",
-    "Role is to guide, not build – help with ideation, architecture, debugging.",
-    "Encourage teams to stay realistic and focus on MVP.",
-    "Each team gets 3–5 minutes for demo + Q&A.",
-    "Judges rotate science-fair style across tables.",
-    "Use provided score sheets and submit to the lead judge after deliberation.",
-    "Winners will be decided based on cumulative scoring + discussions."
+    "<strong>Innovation & Creativity</strong> – Originality of the idea.",
+    "<strong>Technical Implementation</strong> – Functionality, code quality, and working demo.",
+    "<strong>Business Impact</strong> – Relevance to community themes, real-world use cases, and productive functional applications.",
+    "<strong>Sustainability & Social Impact</strong> – Contribution toward positive change.",
+    "<strong>Presentation & Demo</strong> – Clarity, teamwork, and ability to explain the solution."
+  ];
+
+  const participantGuidelinesHeading = "Guidelines for Participants";
+  const participantGuidelines = [
+    "<strong>Mentor Support:</strong> Mentors will circulate during both sprints to guide you - not to build. Seek their help for ideation, architecture, and debugging.",
+    "<strong>Focus on Productive Applications:</strong> Keep your solution practical and aim to deliver a functional, productive application with clear real-world relevance.",
+    "<strong>Demo & Q&A:</strong> Selected teams will have 3–5 minutes to present their demo, followed by a short Q&A.",
+    "<strong>Scoring & Results:</strong> Judges will use the provided score sheets and submit them to the lead judge. Winners will be decided based on cumulative scores and deliberations."
   ];
 
   return (
@@ -180,9 +181,13 @@ const Introduction = () => {
                 <div className="text-green-800 dark:text-green-200 text-base mb-2 text-left font-semibold">{judgingCriteriaHeading}</div>
                 <ul className="list-disc list-inside space-y-3 text-left">
                   {judgingCriteria.map((item, index) => (
-                    <li key={index} className="text-gray-700 dark:text-gray-200 text-base">
-                      {item}
-                    </li>
+                    <li key={index} className="text-gray-700 dark:text-gray-200 text-base" dangerouslySetInnerHTML={{ __html: item }} />
+                  ))}
+                </ul>
+                <div className="text-green-800 dark:text-green-200 text-base mb-2 text-left font-semibold mt-4">{participantGuidelinesHeading}</div>
+                <ul className="list-disc list-inside space-y-3 text-left">
+                  {participantGuidelines.map((item, index) => (
+                    <li key={index} className="text-gray-700 dark:text-gray-200 text-base" dangerouslySetInnerHTML={{ __html: item }} />
                   ))}
                 </ul>
               </div>
