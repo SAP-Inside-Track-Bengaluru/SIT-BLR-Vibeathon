@@ -72,7 +72,7 @@ const Introduction = () => {
           </motion.div>
           <h2 className="text-5xl md:text-6xl font-black mb-6 relative">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 filter drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]">
-              SAP Inside Track & Vibeathon
+              SAP Inside Track Vibeathon
             </span>
           </h2>
           <motion.div
@@ -110,7 +110,7 @@ const Introduction = () => {
             </span>
           </div>
           <p className="text-blue-900/80 dark:text-blue-100 text-base">
-          Calling all college students to join a community-powered SIT hackathon! Learn, share, network, and build innovative solutions. Showcase your ideas, compete for prizes, and bring your vision to life!          </p>
+          Join a community-powered SIT hackathon! Learn, share, network, and build innovative solutions. Showcase your ideas, compete for prizes, and bring your vision to life!          </p>
         </div>
       </motion.div>
 

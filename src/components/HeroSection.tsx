@@ -137,6 +137,16 @@ const HeroSection = () => {
                 ATHON
               </span>
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="mt-1 sm:mt-2"
+            >
+              <span className="text-base sm:text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-200 to-blue-400 tracking-wide">
+                College Student Edition
+              </span>
+            </motion.div>
           </div>
 
           {/* Animated Tagline */}
