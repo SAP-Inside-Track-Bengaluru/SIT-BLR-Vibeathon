@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Gavel, ShieldCheck } from "lucide-react";
 
 const Introduction = () => {
   const [showInfo, setShowInfo] = useState(false);
+  const [activeTab, setActiveTab] = useState<'guidelines' | 'judging'>('guidelines');
 
   const guidelines = [
     "All participants must register at the desk and collect their name tags.",
@@ -14,15 +15,19 @@ const Introduction = () => {
     "Only code developed during the event is allowed.",
     "AI and open-source tools are allowed.",
     "Submissions must include: GitHub/Repo link, Project description, 2-min demo video (screen recording or live demo-ready).",
-    "Deadline: 3:00 PM (Code Freeze).",
+    "Deadline: 3:30 PM (Code Freeze).",
     "Late submissions will not be accepted.",
     "Wi-Fi credentials will be provided at registration.",
     "Charging points available across the venue.",
-    "Volunteers will wear different colour tags and T-Shirts – approach them for help."
+    "Volunteers will wear different colour tags and T-Shirts – approach them for help.",
+    // Rules moved here
+    "Be respectful of all participants, mentors, and organizers.",
+    "No plagiarism, offensive content, or disruptive behaviour.",
+    "Violations may result in disqualification."
   ];
 
-  const rules = [
-    "Projects will be scored on the following:",
+  const judgingCriteriaHeading = "Projects will be scored on the following:";
+  const judgingCriteria = [
     "Innovation & Creativity – Originality of the idea.",
     "Technical Implementation – Functionality, code quality, and working demo.",
     "Business Impact – Relevance to SAP theme and real-world applications.",
@@ -34,10 +39,7 @@ const Introduction = () => {
     "Each team gets 3–5 minutes for demo + Q&A.",
     "Judges rotate science-fair style across tables.",
     "Use provided score sheets and submit to the lead judge after deliberation.",
-    "Winners will be decided based on cumulative scoring + discussions.",
-    "Be respectful of all participants, mentors, and organizers.",
-    "No plagiarism, offensive content, or disruptive behaviour.",
-    "Violations may result in disqualification."
+    "Winners will be decided based on cumulative scoring + discussions."
   ];
 
   return (
@@ -132,38 +134,59 @@ const Introduction = () => {
         </motion.div>
       </motion.div>
 
-      {/* Guidelines and Rules Section */}
+      {/* Guidelines, Judging Tabbed Section */}
       {showInfo && (
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="relative mx-auto mt-10 max-w-7xl w-full bg-white dark:bg-gray-900 rounded-xl shadow-lg p-10 border border-gray-200 dark:border-gray-700"
+          className="relative mx-auto mt-10 max-w-2xl w-full bg-white dark:bg-gray-900 rounded-xl shadow-lg p-4 sm:p-8 border border-gray-200 dark:border-gray-700"
         >
-          <div className="flex flex-col md:flex-row gap-10 md:gap-16 justify-center items-stretch">
-            {/* Guidelines Column */}
-            <div className="flex-1 min-w-0 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 shadow-sm flex flex-col">
-              <h3 className="text-2xl font-bold text-blue-700 mb-4 text-left">Guidelines</h3>
-              <ul className="list-disc list-inside space-y-4 text-left">
-                {guidelines.map((guideline, index) => (
-                  <li key={index} className="text-gray-700 dark:text-gray-200 text-base">
-                    {guideline}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Tab Buttons */}
+          <div className="flex justify-center gap-2 sm:gap-4 mb-6">
+            <button
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg font-semibold transition-colors duration-200 text-sm sm:text-base
+                ${activeTab === 'guidelines' ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-200 shadow' : 'hover:bg-blue-50 dark:hover:bg-blue-900/20 text-blue-600 dark:text-blue-300'}`}
+              onClick={() => setActiveTab('guidelines')}
+            >
+              <Sparkles className="w-5 h-5" /> Guidelines
+            </button>
+            <button
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg font-semibold transition-colors duration-200 text-sm sm:text-base
+                ${activeTab === 'judging' ? 'bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-200 shadow' : 'hover:bg-green-50 dark:hover:bg-green-900/20 text-green-600 dark:text-green-300'}`}
+              onClick={() => setActiveTab('judging')}
+            >
+              <Gavel className="w-5 h-5" /> Judging
+            </button>
+          </div>
 
-            {/* Rules Column */}
-            <div className="flex-1 min-w-0 bg-purple-50 dark:bg-purple-900/20 rounded-lg p-6 shadow-sm flex flex-col">
-              <h3 className="text-2xl font-bold text-purple-700 mb-4 text-left">Rules</h3>
-              <ul className="list-disc list-inside space-y-4 text-left">
-                {rules.map((rule, index) => (
-                  <li key={index} className="text-gray-700 dark:text-gray-200 text-base">
-                    {rule}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Tab Content */}
+          <div className="min-h-[180px] sm:min-h-[160px]">
+            {activeTab === 'guidelines' && (
+              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 shadow-sm">
+                <h3 className="text-xl font-bold text-blue-700 mb-3 text-left flex items-center gap-2"><Sparkles className="w-5 h-5" /> Guidelines</h3>
+                <ul className="list-disc list-inside space-y-3 text-left">
+                  {guidelines.map((guideline, index) => (
+                    <li key={index} className="text-gray-700 dark:text-gray-200 text-base">
+                      {guideline}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {activeTab === 'judging' && (
+              <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 shadow-sm">
+                <h3 className="text-xl font-bold text-green-700 mb-1 text-left flex items-center gap-2"><Gavel className="w-5 h-5" /> Judging Criteria & Process</h3>
+                <div className="text-green-800 dark:text-green-200 text-base mb-2 text-left font-semibold">{judgingCriteriaHeading}</div>
+                <ul className="list-disc list-inside space-y-3 text-left">
+                  {judgingCriteria.map((item, index) => (
+                    <li key={index} className="text-gray-700 dark:text-gray-200 text-base">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </motion.div>
       )}
