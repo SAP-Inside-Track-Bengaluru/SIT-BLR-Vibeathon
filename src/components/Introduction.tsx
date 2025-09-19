@@ -8,6 +8,7 @@ const Introduction = () => {
   const [activeTab, setActiveTab] = useState<'guidelines' | 'judging'>('guidelines');
 
   const guidelines = [
+    "The event is open to college students from all years and streams. No prior hackathon experience is required just enthusiasm to learn and build!",
     "All participants must register at the desk and collect their name tags.",
     "Each team can have up to 4 members. Solo participants are also allowed.",
     "Respect the Code of Conduct – be professional, collaborative, and inclusive.",
@@ -105,11 +106,11 @@ const Introduction = () => {
         >
           <div className="flex items-center gap-3 mb-2 justify-center">
             <span className="text-xl font-bold text-blue-600">
-              SAP Inside Track Vibeathon
+            SIT Vibeathon - College Student Edition
             </span>
           </div>
           <p className="text-blue-900/80 dark:text-blue-100 text-base">
-          Join a community-powered SAP event and hackathon! Learn, share, network, and build innovative solutions. Showcase your ideas, compete for prizes, and bring your vision to life!          </p>
+          Calling all college students to join a community-powered SIT hackathon! Learn, share, network, and build innovative solutions. Showcase your ideas, compete for prizes, and bring your vision to life!          </p>
         </div>
       </motion.div>
 
