@@ -105,12 +105,11 @@ const Introduction = () => {
         >
           <div className="flex items-center gap-3 mb-2 justify-center">
             <span className="text-xl font-bold text-blue-600">
-              SAP Inside Track & Vibeathon
+              SAP Inside Track Vibeathon
             </span>
           </div>
           <p className="text-blue-900/80 dark:text-blue-100 text-base">
-            A community-driven SAP event and hackathon experience. Learn, share, network, and compete for prizes. Let your ideas vibe and come alive!
-          </p>
+          Join a community-powered SAP event and hackathon! Learn, share, network, and build innovative solutions. Showcase your ideas, compete for prizes, and bring your vision to life!          </p>
         </div>
       </motion.div>
 

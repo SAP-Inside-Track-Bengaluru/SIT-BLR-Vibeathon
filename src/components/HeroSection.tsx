@@ -144,9 +144,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-lg sm:text-2xl md:text-3xl font-medium mb-8"
+            className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-4 text-lg sm:text-2xl md:text-3xl font-medium mb-8"
           >
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-300">Code with Co-pilot.</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-300">Code with Copilot.</span>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500">Craft the Community.</span>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-300"> Create the Future.</span>
           </motion.div>
@@ -179,7 +179,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="font-medium text-sm sm:text-base md:text-lg text-foreground/90 hover:text-blue-500 transition-colors duration-300"
             >
-              SAP Labs, Whitefield
+              SAP Labs India, Whitefield
             </a>
           </motion.div>
         </motion.div>
