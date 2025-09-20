@@ -9,6 +9,7 @@ const Introduction = () => {
 
   const guidelines = [
     "The event is open to college students from all years and streams. No prior hackathon experience is required just enthusiasm to learn and build!",
+    "Students who have already registered for SIT may also register for Vibeathon; however, they will be unable to attend the SIT sessions, as both events occur simultaneously.",
     "All participants must register at the desk and collect their name tags.",
     "Each team can have up to 4 members. Solo participants are also allowed.",
     "Respect the Code of Conduct – be professional, collaborative, and inclusive.",
