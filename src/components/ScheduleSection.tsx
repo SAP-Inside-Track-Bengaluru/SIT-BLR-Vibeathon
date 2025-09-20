@@ -137,7 +137,7 @@ const ScheduleSection = () => {
 						transition={{ delay: 0.2 }}
 						className="text-xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						Three days of intense coding, learning, and innovation
+						A day of intense coding, learning, and innovation
 					</motion.p>
 				</div>
 
