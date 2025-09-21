@@ -13,6 +13,7 @@ const Introduction = () => {
     "One person can register on behalf of the entire team by selecting the team size and providing each member’s GitHub username (mandatory for GitHub Copilot access).",
     "All participants must register at the desk and collect their name tags.",
     "Each team can have up to 4 members. Solo participants are also allowed.",
+    "Participants are allowed to be part of only one team",
     "Respect the Code of Conduct – be professional, collaborative, and inclusive.",
     "Duration: 2 main hacking sprints (09:30–12:30 & 12:45–2:45).",
     "Only code developed during the event is allowed.",
