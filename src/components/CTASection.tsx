@@ -227,40 +227,26 @@ const CTASection = () => {
               whileTap={{ scale: 0.98 }}
             >
               <Button
-                asChild
                 size="lg"
-                className="relative overflow-hidden group bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600
-                  hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-500
-                  text-lg sm:text-xl md:text-2xl px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6"
+                className="relative overflow-hidden group bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 text-lg sm:text-xl md:text-2xl px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 cursor-not-allowed opacity-60 pointer-events-none"
+                disabled
+                tabIndex={-1}
+                aria-disabled="true"
+                onClick={e => e.preventDefault()}
               >
-                <a href="https://konfhub.com/sap-inside-track-bengaluru-vibeathon" target="_blank" rel="noopener noreferrer">
+                <span className="relative z-10 flex items-center gap-2 font-bold">
+                  Join the Competition
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-400 to-blue-700"
-                    initial={{ x: "100%" }}
-                    whileHover={{ x: 0 }}
-                    transition={{ duration: 0.5 }}
-                  />
-                  <span className="relative z-10 flex items-center gap-2 font-bold">
-                    Join the Competition
-                    <motion.div
-                      animate={{ x: [0, 5, 0] }}
-                      transition={{ duration: 1, repeat: Infinity }}
-                    >
-                      <ArrowRight className="w-6 h-6" />
-                    </motion.div>
-                  </span>
-                </a>
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1, repeat: Infinity }}
+                  >
+                    <ArrowRight className="w-6 h-6" />
+                  </motion.div>
+                </span>
               </Button>
             </motion.div>
             
-            <motion.p 
-              className="text-base text-gray-600 dark:text-gray-400"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              Registration closes on 23rd September • 150 spots available
-            </motion.p>
+
           </motion.div>
 
           <motion.div 

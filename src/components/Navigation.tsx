@@ -138,9 +138,13 @@ const Navigation = () => {
               }
             </Button>
             <Button asChild
-              className="gradient-primary hover:glow text-white px-6 font-semibold transition-all duration-200"
+              className="gradient-primary text-white px-6 font-semibold transition-all duration-200 cursor-not-allowed opacity-60 pointer-events-none"
+              disabled
+              tabIndex={-1}
+              aria-disabled="true"
+              onClick={e => e.preventDefault()}
             >
-              <a href="https://konfhub.com/sap-inside-track-bengaluru-vibeathon" target="_blank" rel="noopener noreferrer">Register</a>
+              Register
             </Button>
           </div>
 
@@ -195,9 +199,13 @@ const Navigation = () => {
             })}
             <div className="pt-4 pb-2">
               <Button asChild
-                className="gradient-primary hover:glow text-white w-full font-semibold"
+                className="gradient-primary text-white w-full font-semibold cursor-not-allowed opacity-60 pointer-events-none"
+                disabled
+                tabIndex={-1}
+                aria-disabled="true"
+                onClick={e => e.preventDefault()}
               >
-                <a href="https://forms.gle/your-google-form-link" target="_blank" rel="noopener noreferrer">Register Now</a>
+                Register Now
               </Button>
             </div>
           </div>

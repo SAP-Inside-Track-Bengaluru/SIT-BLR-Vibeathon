@@ -227,12 +227,25 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
         >
-          <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg shadow-lg transition-transform transform hover:scale-105">
-            <a href="https://konfhub.com/sap-inside-track-bengaluru-vibeathon" target="_blank" rel="noopener noreferrer">
-              Register Now <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+          <Button
+            size="lg"
+            className="bg-blue-600 text-white font-bold text-lg shadow-lg transition-transform transform cursor-not-allowed opacity-60 pointer-events-none"
+            disabled
+            tabIndex={-1}
+            aria-disabled="true"
+            onClick={e => e.preventDefault()}
+          >
+            Register Now <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </motion.div>
+        <motion.p
+          className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-300 mt-6 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
+          Thank you for the overwhelming response to Vibeathon! We’ve reached full capacity and registrations are now closed.
+        </motion.p>
       </div>
     </section>
   );
