@@ -229,7 +229,7 @@ const HeroSection = () => {
         >
           <Button
             size="lg"
-            className="bg-blue-600 text-white font-bold text-lg shadow-lg transition-transform transform cursor-not-allowed opacity-60 pointer-events-none"
+            className="bg-gray-400 text-white font-bold text-lg shadow transition-transform transform cursor-not-allowed opacity-80 pointer-events-none"
             disabled
             tabIndex={-1}
             aria-disabled="true"

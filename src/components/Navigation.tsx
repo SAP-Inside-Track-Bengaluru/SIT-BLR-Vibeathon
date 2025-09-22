@@ -137,8 +137,9 @@ const Navigation = () => {
                 <Moon className="h-5 w-5" />
               }
             </Button>
-            <Button asChild
-              className="gradient-primary text-white px-6 font-semibold transition-all duration-200 cursor-not-allowed opacity-60 pointer-events-none"
+            <Button
+              size="sm"
+              className="bg-gray-400 text-white px-6 font-semibold transition-all duration-200 cursor-not-allowed opacity-80 pointer-events-none"
               disabled
               tabIndex={-1}
               aria-disabled="true"
@@ -198,8 +199,8 @@ const Navigation = () => {
               );
             })}
             <div className="pt-4 pb-2">
-              <Button asChild
-                className="gradient-primary text-white w-full font-semibold cursor-not-allowed opacity-60 pointer-events-none"
+              <Button
+                className="bg-gray-400 text-white w-full font-semibold cursor-not-allowed opacity-80 pointer-events-none"
                 disabled
                 tabIndex={-1}
                 aria-disabled="true"

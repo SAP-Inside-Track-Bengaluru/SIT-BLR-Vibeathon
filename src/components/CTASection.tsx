@@ -228,7 +228,7 @@ const CTASection = () => {
             >
               <Button
                 size="lg"
-                className="relative overflow-hidden group bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 text-lg sm:text-xl md:text-2xl px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 cursor-not-allowed opacity-60 pointer-events-none"
+                className="relative overflow-hidden group bg-gray-400 text-white text-lg sm:text-xl md:text-2xl px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 cursor-not-allowed opacity-80 pointer-events-none"
                 disabled
                 tabIndex={-1}
                 aria-disabled="true"
@@ -246,7 +246,6 @@ const CTASection = () => {
               </Button>
             </motion.div>
             
-
           </motion.div>
 
           <motion.div 
