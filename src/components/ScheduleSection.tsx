@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const schedule = [
 	{
-		time: '07:45 – 09:00',
+		time: '07:30 – 08:40',
 		title: 'Registration & Breakfast',
 		description: 'Students check in, grab badges, enjoy breakfast, light networking.',
 		icon: Users,
