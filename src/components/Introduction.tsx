@@ -92,7 +92,7 @@ const Introduction = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Join us for an exciting event filled with innovation, collaboration, and amazing prizes. Be part of the journey to build the future!
+          Vibeathon 2025: Thanks for the energy, ideas, and memories! See you at the next one.
         </motion.p>
       </motion.div>
 

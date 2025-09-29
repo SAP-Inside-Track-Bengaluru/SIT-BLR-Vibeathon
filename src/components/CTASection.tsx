@@ -157,11 +157,10 @@ const CTASection = () => {
           </div>
             
           <motion.p 
-            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-16 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-muted-foreground mb-16 max-w-2xl mx-auto"
             variants={itemVariants}
           >
-            Join hundreds of developers, innovators, and dreamers in the ultimate hackathon experience. 
-            Your next breakthrough is just one weekend away.
+            The code has been committed, the winners crowned. Relive the moments of innovation and collaboration from Vibeathon 2025.
           </motion.p>
 
           <motion.div 
@@ -218,7 +217,7 @@ const CTASection = () => {
             })}
           </motion.div>
 
-          <motion.div 
+          {/* <motion.div 
             className="space-y-6 mb-16"
             variants={itemVariants}
           >
@@ -246,7 +245,7 @@ const CTASection = () => {
               </Button>
             </motion.div>
             
-          </motion.div>
+          </motion.div> */}
 
           <motion.div 
             className="flex flex-col sm:flex-row gap-4 justify-center"

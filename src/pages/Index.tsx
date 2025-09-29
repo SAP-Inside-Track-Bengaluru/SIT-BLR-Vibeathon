@@ -8,6 +8,7 @@ import ContactSection from '@/components/ContactSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import Introduction from '@/components/Introduction';
+import { WinnersSection } from '@/components/WinnersSection';
 
 const Index = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -86,6 +87,10 @@ const Index = () => {
       
       <section id="introduction">
         <Introduction />
+      </section>
+
+      <section id="winners">
+        <WinnersSection />
       </section>
       
       <section id="tracks">

@@ -123,8 +123,8 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Theme Toggle & Register Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Theme Toggle */}
+          <div className="hidden md:flex items-center">
             <Button
               aria-label="Toggle theme"
               variant="ghost"
@@ -136,16 +136,6 @@ const Navigation = () => {
                 <Sun className="h-5 w-5" /> : 
                 <Moon className="h-5 w-5" />
               }
-            </Button>
-            <Button
-              size="sm"
-              className="bg-gray-400 text-white px-6 font-semibold transition-all duration-200 cursor-not-allowed opacity-80 pointer-events-none"
-              disabled
-              tabIndex={-1}
-              aria-disabled="true"
-              onClick={e => e.preventDefault()}
-            >
-              Register
             </Button>
           </div>
 
@@ -198,17 +188,7 @@ const Navigation = () => {
                 </button>
               );
             })}
-            <div className="pt-4 pb-2">
-              <Button
-                className="bg-gray-400 text-white w-full font-semibold cursor-not-allowed opacity-80 pointer-events-none"
-                disabled
-                tabIndex={-1}
-                aria-disabled="true"
-                onClick={e => e.preventDefault()}
-              >
-                Register Now
-              </Button>
-            </div>
+            {/* Register button removed */}
           </div>
         </div>
       )}

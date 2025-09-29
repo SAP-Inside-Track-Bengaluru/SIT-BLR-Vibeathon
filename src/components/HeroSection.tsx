@@ -169,6 +169,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
+          {/*
           <motion.div 
             className="flex items-center gap-2 sm:gap-3 glass-card backdrop-blur-sm border-purple-200/20 
               hover:border-purple-500/30 transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 min-w-[180px] justify-center sm:justify-start"
@@ -177,6 +178,7 @@ const HeroSection = () => {
             <Calendar className="w-5 h-5 sm:w-6 sm:h-6 text-purple-500 flex-shrink-0" />
             <span className="font-medium text-sm sm:text-base md:text-lg text-foreground/90">September 27, 2025, 7:30 AM</span>
           </motion.div>
+          */}
           <motion.div 
             className="flex items-center gap-2 sm:gap-3 glass-card backdrop-blur-sm border-purple-200/20 
               hover:border-pink-500/30 transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 min-w-[180px] justify-center sm:justify-start"
@@ -194,7 +196,8 @@ const HeroSection = () => {
           </motion.div>
         </motion.div>
 
-        {/* Animated Countdown Timer */}
+        {/*
+        Animated Countdown Timer
         <motion.div 
           className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 mb-12 mx-auto px-4 sm:px-0 max-w-[280px] sm:max-w-[600px]"
           initial={{ opacity: 0, y: 20 }}
@@ -219,8 +222,9 @@ const HeroSection = () => {
             </motion.div>
           ))}
         </motion.div>
+        */}
 
-        {/* Animated CTA Button */}
+        {/*
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -238,14 +242,31 @@ const HeroSection = () => {
             Register Now <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </motion.div>
-        <motion.p
-          className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-300 mt-6 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
+        */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="flex flex-col items-center justify-center gap-4 mt-12"
         >
-          Thank you for the overwhelming response to Vibeathon! We’ve reached full capacity and registrations are now closed.
-        </motion.p>
+          <motion.p
+            className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
+            Vibeathon 2025: A Day to Remember!
+          </motion.p>
+          <motion.p
+            className="text-lg sm:text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-200 to-blue-400 mt-2 text-center max-w-5xl"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+          >
+            Thank you to every participant, mentor, and supporter for making this event a phenomenal success.<br/>
+            <span className="block mt-2">Stay tuned for future Vibeathon adventures—where innovation meets community!</span>
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   );
